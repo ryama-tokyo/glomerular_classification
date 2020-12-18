@@ -75,8 +75,11 @@ wheel           0.29.0
 
 ## Usage
 ### train a CNN
+<br>
 e.g
+<br>
 python3 yama_cnn_weighted.py -g 3 -e 100 -b 50 -dr 0.0 -alpha 0.0000001 -no 2 -s 5  --weighted_loss 1 --model_type 4 --optm_type adam --n_fold 4 --patience_limit 50 --remark matrixincrease_new >./result/matrixincrease_new/resnet50_transfer/result.txt &
+<br>
 [-g] ; the number of GPU you use
 <br>
 [-e] ; the number of epoch
