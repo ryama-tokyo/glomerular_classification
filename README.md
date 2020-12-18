@@ -26,8 +26,9 @@ You have to download the pretrained model of ResNet50 for chainer. Please downlo
 
 
 ## Requirement
+<br>
 Python3
---------------- -------
+<br>
 <br>
 chainer         4.0.0
 <br>
@@ -70,7 +71,7 @@ setuptools      20.7.0
 six             1.11.0
 <br>
 wheel           0.29.0
---------------- -------
+
 
 ## Usage
 ### train a CNN
