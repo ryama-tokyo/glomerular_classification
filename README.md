@@ -28,6 +28,7 @@ You have to download the pretrained model of ResNet50 for chainer. Please downlo
 ## Requirement
 Python3
 --------------- -------
+<br>
 chainer         4.0.0
 <br>
 cupy-cuda80     4.0.0
