@@ -73,7 +73,35 @@ wheel           0.29.0
 
 ## Usage
 ### train a CNN
-python3 yama_cnn.py -remark [remark] -e [epoch]
+e.g
+python3 yama_cnn_weighted.py -g 3 -e 100 -b 50 -dr 0.0 -alpha 0.0000001 -no 2 -s 5  --weighted_loss 1 --model_type 4 --optm_type adam --n_fold 4 --patience_limit 50 --remark matrixincrease_new >./result/matrixincrease_new/resnet50_transfer/result.txt &
+[-g] ; the number of GPU you use
+<br>
+[-e] ; the number of epoch
+<br>
+[-b] ; batch size
+<br>
+[-dr] ; dropput rate
+<br>
+[-alpha] ; the alpha of ADAM
+<br>
+[-no] ; the number of ouptut classes
+<br>
+[-s] ; save interval
+<br>
+[-weighted_loss] ; use weighted_loss or not (1; use)
+<br>
+[-model_type] ; model_type (e.g 4:ResNet50)
+<br>
+[-optm_type] ; optimizer
+<br>
+[-n_fold] ; the number of fold
+<br>
+[-patience_limit]; the early stop
+<br>
+[-remark]; remark(e.g fibrouscrescent)
+
+
 ### Grad-CAM(after training finished)
 #### defining 'capillary collapse' and 'fibrous crescent'
 python3 grad_test.py
