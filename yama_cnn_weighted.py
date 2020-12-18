@@ -336,7 +336,7 @@ if __name__ == '__main__':
     all_best_valid_accs = []
 
     entropy_weight=[]
-    weight_sheet=pd.read_csv('/workspace/mountNAS/99_WS/10_experimental_data/ryama_organized/20191126_folding_remake/weight_of_remark_new.csv',index_col=0)
+    weight_sheet=pd.read_csv('./dataset/weight_of_remark_new.csv',index_col=0)
     weight_sheet=weight_sheet.rename(columns={'0': 'remark'})
     location = (np.where(weight_sheet['remark'] == npy_filename)[0])
     print(weight_sheet.iloc[location+0,:])
