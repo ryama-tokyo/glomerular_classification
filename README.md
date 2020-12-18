@@ -108,7 +108,7 @@ python3 yama_cnn_weighted.py -g 3 -e 100 -b 50 -dr 0.0 -alpha 0.0000001 -no 2 -s
 
 
 ### Grad-CAM(after training finished)
-#### defining 'capillary collapse' and 'fibrous crescent'
+#### showing the Grad-CAM of 'capillary collapse' and 'fibrous crescent' for test images
 python3 grad_test.py
 
 <img src="/Users/home_pc/Desktop/図1.png" width="120">
