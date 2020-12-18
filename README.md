@@ -20,17 +20,12 @@ Our image datasets are **<u>NOT</u>** allowed to be public by the IRBs. So pleas
 * All scores(e.g positive or negative) should be saved as (.npy), having two dimensions.<br>
 * All filename must be saved as (.npy)
 
-### CNN experiment
+### Preparation
 You have to download the pretrained model of ResNet50 for chainer. Please download the pretrained model from [https://github.com/KaimingHe/deep-residual-networks](https://github.com/KaimingHe/deep-residual-networks)
 , and place it on /root/.chainer/dataset/pfnet/chainer/models/ResNet-50-model.caffemodel
 
 
-### Grad-CAM
-* Showing CNN's attention f
-
-
 ## Requirement
-
 Python3
 --------------- -------
 chainer         4.0.0
@@ -80,13 +75,12 @@ wheel           0.29.0
 ### train a CNN
 python3 yama_cnn.py -remark [remark] -e [epoch]
 ### Grad-CAM(after training finished)
-python3 yama_gradcam.py - remark [remark]
+#### defining 'capillary collapse' and 'fibrous crescent'
+python3 grad_test.py
 
 <img src="/Users/home_pc/Desktop/図1.png" width="120">
 <img src="/Users/home_pc/Desktop/図2.png" width="120">
 
-## Install
-$ docker pull ryohei\_yamaguchi/glomerular\_classification
 
 
 ## Licence
