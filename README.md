@@ -5,7 +5,6 @@
 'Glomerular Classification'
 ====
 ## [Glomerular classification using convolutional neural networks based on defined annotation criteria and concordance evaluation among clinicians](https://www.sciencedirect.com/science/article/pii/S2468024920317940?via%3Dihub#tbl6)
-### !上のリンクは最終的に論文の正式URLに変更する(この文章はアップロード確定後に削除する)
 
 ## Overview
 1. Train a CNN to classify a remark (e.g. fibrouscrescent) for a glomerular image.
@@ -110,9 +109,6 @@ python3 yama_cnn_weighted.py -g 3 -e 100 -b 50 -dr 0.0 -alpha 0.0000001 -no 2 -s
 ### Grad-CAM(after training finished)
 #### showing the Grad-CAM of 'capillary collapse' and 'fibrous crescent' for test images
 python3 grad_test.py
-
-<img src="/Users/hogedoge/図1.png" width="120">
-<img src="/Users/hogedoge/図2.png" width="120">
 
 
 
